@@ -17,14 +17,3 @@
 	  z-index: -1;  
 	}
 
-	#timer{
- 	  display: block;
-  	  bottom: 0;
-  	  position: absolute;
-  	 font-size: 50px;
- 	}
-
-	span {
-  	  display: inline-block;
-  	  font-size: 25px;
-	}
