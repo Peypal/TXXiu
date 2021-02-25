@@ -1,4 +1,17 @@
 	body {
 	  background: fixed linear-gradient(to right bottom, #01327c, #065a60, #00a1ba, #01b18e, #32b37b);
 	  background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
+
+	}
+	#main_wrap{
+	  background: url("../img/background-202102.jpg");
+	  background-size:cover;
+	  opacity: 0.1;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  background-repeat:no-repeat;;
+	  z-index: -1;  
 	}
