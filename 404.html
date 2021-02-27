@@ -41,7 +41,7 @@
     divLabel.innerHTML = time.toString() + label
     function updateTime(){
         time = time-1
-        if(time>=0){ divLabel.innerHTML = time.toString() + label }
+        if(time>=15){ divLabel.innerHTML = time.toString() + label }
         else{ divLabel.innerHTML = '<h3 class="mt-1">' + 'redirect to homepage...</h3>' }
     }
     setInterval("updateTime()",1000);
