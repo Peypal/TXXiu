@@ -34,13 +34,13 @@
 	</div>
 </div>
  <script language="javascript" type="text/javascript">
-    var time = 5
+    var time = 30
     var divLabel = document.getElementById("countdown")
-    var label = 'seconds redirecting to homepage.'
+    var label = ' seconds redirecting to homepage.'
     divLabel.innerHTML = time.toString() + label
     function updateTime(){
         time = time-1
-        if(time>=2){ divLabel.innerHTML = time.toString() + label }
+        if(time>=15){ divLabel.innerHTML = time.toString() + label }
         else{ divLabel.innerHTML = 'Redirecting to homepage...' }
     }
     setInterval("updateTime()",1000);
