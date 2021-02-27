@@ -31,18 +31,18 @@
 	<div  id="main_wrap" >
 		<div class="text-center"><h1 class="display-4 pt-5 mt-5">天下秀，秀天下</h1></div>
 		<div class="text-center"><h2 class="mt-5">COMING SOON</h2></div>
-		<div class="text-center" id="countdown"><h2 class="mt-5"></h2></div>
+		<div class="text-center" id="countdown"></div>
 	</div>
 </div>
  <script language="javascript" type="text/javascript">
     var time = 3
     var divLabel = document.getElementById("countdown")
-    var label = "seconds redirect to homepage."
+    var label = "<h2 class="mt-5">seconds redirect to homepage.</h2>"
     divLabel.innerHTML = time.toString() + label
     function updateTime(){
         time = time-1
         if(time>=0){ divLabel.innerHTML = time.toString() + label }
-        else{ divLabel.innerHTML = "redirect to homepage..." }
+        else{ divLabel.innerHTML = "<h2 class="mt-5">redirect to homepage...</h2>" }
     }
     setInterval("updateTime()",1000);
     setTimeout("javascript:location.href='https://txxiu.com'", time*1000);
