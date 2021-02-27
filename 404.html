@@ -30,18 +30,18 @@
 <div class="container">
 	<div  id="main_wrap" >
 		<div class="text-center"><h1 class="display-4 pt-5 mt-5">404</h1></div>
-		<div class="text-center" id="countdown"><h3 class="mt-1"></h3></div>
+		<div class="text-center" id="countdown"></div>
 	</div>
 </div>
  <script language="javascript" type="text/javascript">
     var time = 30
     var divLabel = document.getElementById("countdown")
     var label = ' seconds redirecting to homepage.'
-    divLabel.innerHTML = time.toString() + label
+    divLabel.innerHTML = '<h2 class="mt-1">' + time.toString() + label + '</h2>'
     function updateTime(){
         time = time-1
         if(time>=15){ divLabel.innerHTML = time.toString() + label }
-        else{ divLabel.innerHTML = 'Redirecting to homepage...' }
+        else{ divLabel.innerHTML = '<h2 class="mt-1">Redirecting to homepage...</h2>' }
     }
     setInterval("updateTime()",1000);
     setTimeout("javascript:location.href='https://txxiu.com'", time*1000);
