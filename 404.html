@@ -37,12 +37,12 @@
  <script language="javascript" type="text/javascript">
     var time = 3
     var divLabel = document.getElementById("countdown")
-    var label = "<h2 class="mt-5">seconds redirect to homepage.</h2>"
+    var label = '<h2 class="mt-5">' + 'seconds redirect to homepage.</h2>'
     divLabel.innerHTML = time.toString() + label
     function updateTime(){
         time = time-1
         if(time>=0){ divLabel.innerHTML = time.toString() + label }
-        else{ divLabel.innerHTML = "<h2 class="mt-5">redirect to homepage...</h2>" }
+        else{ divLabel.innerHTML = '<h2 class="mt-5">' + 'redirect to homepage...</h2>' }
     }
     setInterval("updateTime()",1000);
     setTimeout("javascript:location.href='https://txxiu.com'", time*1000);
